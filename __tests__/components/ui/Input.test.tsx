@@ -84,4 +84,20 @@ describe('input', () => {
       pointerEvents: 'none',
     });
   });
+  it('should call default onBlur function when not provided ', () => {
+    const {getByTestId} = render(
+      <Input value="" onChangeText={mockOnChange} placeholder="Enter Text" />,
+    );
+    act(() => {
+      fireEvent(getByTestId('textInput'), 'blur', {});
+    });
+  });
+  it('should call default onFocus function when not provided ', () => {
+    const {getByTestId} = render(
+      <Input value="" onChangeText={mockOnChange} placeholder="Enter Text" />,
+    );
+    act(() => {
+      fireEvent(getByTestId('textInput'), 'focus', {});
+    });
+  });
 });
