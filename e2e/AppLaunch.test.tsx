@@ -1,11 +1,7 @@
-describe('Example', () => {
-  beforeAll(async () => {
-    await device.launchApp();
-  });
+import {launchaAndReload} from './testUtils';
 
-  beforeEach(async () => {
-    await device.reloadReactNative();
-  });
+describe('Example', () => {
+  launchaAndReload();
 
   it('should have logo image', async () => {
     await expect(element(by.id('logo-image'))).toBeVisible();
