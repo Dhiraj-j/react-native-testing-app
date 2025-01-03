@@ -1,4 +1,4 @@
-package com.rn_testing_app; // (1)
+package com.rn_testing_cicd_app; // (1)
 
 import com.wix.detox.Detox;
 import com.wix.detox.config.DetoxConfig;
