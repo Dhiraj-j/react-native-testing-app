@@ -8,7 +8,10 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "detox:android": "detox test --configuration android.emu.debug"
+    "lint:fix": "eslint src --fix",
+    "format": "prettier --check src && prettier --write src",
+    "detox:android": "detox test --configuration android.emu.debug",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",
@@ -54,6 +57,7 @@
     "babel-jest": "^29.6.3",
     "detox": "^20.28.0",
     "eslint": "^8.19.0",
+    "husky": "^8.0.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
