@@ -37,7 +37,7 @@ platform :android do
     )
     upload_to_play_store(
       track: 'internal',
-      release_status: 'active'
+      release_status: 'draft'
     )
   end
   # desc "Deploy a new version to the Google Play"
