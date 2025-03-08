@@ -8,7 +8,7 @@ export const Colors = {
   primary: '#11b9a8',
   secondary: '#F0F2F6',
   primaryLight: '#EEF2FF',
-  text: '#0D1829',
+  text: '#F0F2F6',
   shadowColor: '#171717',
   white: '#fff',
   borderColor: '#444',
